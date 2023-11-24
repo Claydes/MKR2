@@ -28,7 +28,7 @@ def process(grades, grades_model, res_model):
     return res_word
 
 
-def generate_results(grades_count, tests_num):
+def generate_results(grades_count=5, tests_num=10):
     grades_model = words_model.words_7
     res_model = words_model.words_11
     for i in range(tests_num):
@@ -39,7 +39,7 @@ def generate_results(grades_count, tests_num):
 
 
 if __name__ == '__main__':
-    generate_results(10, 5)
+    generate_results()
 
 
 
